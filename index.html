@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="new_logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <title>NEWSHUB-TopHeadLines & Articles</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav flex">
+      <div class="menu flex">
+        <i class="fa-solid fa-list"></i>
+        <h5 class="hideclass">Menu</h5>
+        <button class="home-btn flex " onclick="reload()">
+          <i class="fa-solid fa-house"></i>
+          <h5 class="hideclass">Home</h5>
+        </button>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" class="news-input" id="news-input" placeholder="e.g Science" />
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+    <div class="heading">
+      <h3><i class="fa-solid fa-layer-group"></i></i>Categories</h3>
+    </div>
+    <ul class="links">
+      <li class="sidebar-item">
+        <i class="fa-solid fa-globe"></i>
+        General
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-coins"></i>
+        Finance
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-landmark"></i>
+        Politics
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-baseball-bat-ball"></i>
+        IPL
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-business-time"></i>
+        Business
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-medal"></i>
+        Sports
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-stethoscope"></i>
+        Health
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-microscope"></i>
+        Science
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-microchip"></i>
+        Technology
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-video"></i>
+        Entertainment
+      </li>
+      <li class="sidebar-item">
+        <i class="fa-solid fa-car"></i>
+        Automobiles
+      </li>
+    </ul>
+
+  </div>
+
+  <main>
+    <div class="cards-container container flex"></div>
+  </main>
+
+  <footer class="hideclass">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="news2_logo.png" alt="news-logo" class="news-logo" />
+      </div>
+      <div>
+        <p class="para">NewsHub Pvt. Ltd.</p>
+        <p class="para">&copy;COPYRIGHT 2024</p>
+      </div>
+      <div>
+        <p class="para">Contact Us:</p>
+        <span>newshub2024@gmail.com</span>
+      </div>
+      <div>
+        <p class="para">Terms & Conditions</p>
+        <p class="para">Privacy Policies</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400X200" alt="news-img" id="news-img" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">Tittle</h3>
+        <h6 class="news-source" id="news-source">News name</h6>
+        <p class="news-decs" id="news-decs">this is news parah</p>
+      </div>
+    </div>
+  </template>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
